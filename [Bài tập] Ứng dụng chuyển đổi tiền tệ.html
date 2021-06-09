@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<from >
+    <input type="text" id="input">
+    <select id="se1">
+        <option value="a">vnd</option>
+        <option value="b">usd</option>
+    </select>
+
+    <select id="se2">
+        <option value="a">vnd</option>
+        <option value="b">usd</option>
+    </select>
+    <button onclick="abc()">chuyển đổi</button>
+    <script>
+        function abc() {
+            let giatrivao = document.getElementById("input").value;
+            console.log('giatrivao',giatrivao)
+            let se1 =document.getElementById('se1').value;
+            console.log('se1',se1)
+            let se2 =document.getElementById('se2').value;
+            console.log('se2',se2)
+            console.log('check', se1 == se2)
+            if (se1 == se2) {
+                alert(giatrivao);
+            } else {
+                alert(giatrivao*23000)
+            }
+
+            let n = 0;
+            n  = se1.localeCompare('a');
+            console.log('n ======', n)
+            // //console.log('a=',a)
+            // console.log('b=',b)
+            // if (se1 == a && se2 == b) {
+            //     alert(giatrivao/230000);
+            // }
+        }
+
+    </script>
+
+</from>
+</body>
+</html>
